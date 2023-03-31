@@ -8,10 +8,12 @@ const app = express()
 const PORT = 3000
 app.use(express.urlencoded({ extended: true }))
 
-export const DB_NAME= "replace me with your database name"
-export const COLLECTION_NAME= "replace me with your collection name"
+export const DB_NAME= "enter your database name"
+const COLLECTION_NAME= "enter your collection name"
 
-let client = new MongoClient(`mongodb://localhost:37017/${DB_NAME}`)
+
+const MONGODB_URL = `mongodb://localhost:37017/${DB_NAME}`
+let client = new MongoClient(`${MONGODB_URL}`)
 
 
 
@@ -28,8 +30,14 @@ connectToDb(()=>{
 
 
 //GET POSTS
-app.get("/posts", (req, res) => {
+app.get("/posts", async (req, res)   => {
+  client = await MongoClient.connect(MONGODB_URL)
+  const db = await client.db(DB_NAME)
 
+  const collection = db.collection(COLLECTION_NAME);
+  const posts = await collection.find().toArray();
+
+  res.json(posts);
 })
 
 //GET ID PARAMETER

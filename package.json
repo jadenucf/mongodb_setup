@@ -1,13 +1,13 @@
 {
   "name": "project2",
-  "type": "commonjs",
+  "type": "module",
   "version": "1.0.0",
   "description": "For this project, you will be creating a Node.js / Express application that mirrors some of the functionality you worked on during project 1, but on the server side. Going on the theme of content management, you will be creating a file-backed express server that handles blog posts and comments using a JSON file to store the data.",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --experimental-json-modules --exec babel-node index.js"
   },
-  "author": "n/a",
+  "author": "jaden",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",

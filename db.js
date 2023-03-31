@@ -1,20 +1,18 @@
-const { MongoClient } = require('mongodb')
-import { DB_NAME } from "./setup/index.js"
+import { MongoClient } from 'mongodb'
+import { DB_NAME } from "./index.js"
 
 let dbConnection
 
-module.exports = {
-  connectToDb: (cb) => {
-    MongoClient.connect(`mongodb://localhost:37017/${DB_NAME}`)
-    .then((client)=>{
-      dbConnection = client.db()
-      return cb
-    }).catch(err =>{
-      console.log(err)
-      return cb(err)
+export const connectToDb = (cb) => {
+  MongoClient.connect(`mongodb://localhost:37017/${DB_NAME}`)
+    .then((client) => {
+      dbConnection = client.db();
+      return cb;
     })
-    getDb:() => dbConnection
-  }
-}
+    .catch((err) => {
+      console.log(err);
+      return cb(err);
+    });
+};
 
-
+export const getDb = () => dbConnection;
