@@ -41,13 +41,13 @@ app.get("/posts", async (req, res)   => {
 })
 
 //GET ID PARAMETER
-app.get("/posts/:postId", (req, res) => {
+app.get("/posts/:postId", async (req, res) => {
   //finds the specific postid then shares the post
 
 })
 
 //GET AUTHOR PARAMETER
-app.get("/posts/author/:author", (req, res) => {
+app.get("/posts/author/:author", async (req, res) => {
   //find all the comments posted by a specific author
 
 })
@@ -55,7 +55,7 @@ app.get("/posts/author/:author", (req, res) => {
 
 
 //POST 
-app.post("/posts", (req, res) => {
+app.post("/posts", async (req, res) => {
   //creates a new post and sends it to the main array
 
 })
@@ -63,7 +63,7 @@ app.post("/posts", (req, res) => {
 
 
 //DELETE
-app.delete("/delete/:postId", (req, res) => {
+app.delete("/delete/:postId", async (req, res) => {
   //deletes a post from the main array
 
 })
@@ -72,7 +72,7 @@ app.delete("/delete/:postId", (req, res) => {
 
 //POST COMMENT ID
 //creates a comment a person posted within the comment array
-app.post("/posts/:postId/comments/", (req, res) => {
+app.post("/posts/:postId/comments/", async (req, res) => {
 
   
 })
@@ -81,14 +81,14 @@ app.post("/posts/:postId/comments/", (req, res) => {
 
 //GET COMMENTS ARRAY FROM SPECIFIC POSTER
 //displays all the comment the poster has posted
-app.get("/posts/:postId/comment/", (req, res) => {
+app.get("/posts/:postId/comment/", async (req, res) => {
 
 })
 
 
 
 //DELETES A COMMENT FROM A POST
-app.delete("/posts/:postId/comment/:id", (req, res) => {
+app.delete("/posts/:postId/comment/:id", async (req, res) => {
 
 })
 
