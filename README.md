@@ -1,6 +1,6 @@
 # jaden's how to guide
 
-This is a guide on how to connect mongoDB compass with node.
+This is a guide on how to connect MongoDB compass with node.
 
 ## Prequisites  
 Make sure MongoDB compass is installed and your MongoDB image is installed in Docker Desktop. 
@@ -18,5 +18,4 @@ Now make look inside the index.js file and  replace your DB_NAME and COLLECTION_
 
 Now run these commands in your terminal:
 1. npm install i
-
 2. npm run start
