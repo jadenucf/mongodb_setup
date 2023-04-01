@@ -19,3 +19,5 @@ Now make look inside the index.js file and  replace your DB_NAME and COLLECTION_
 Now run these commands in your terminal:
 1. npm install i
 2. npm run start
+
+Now that everything is supposedly working you can now begin working on your express routes!
