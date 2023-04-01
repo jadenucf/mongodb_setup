@@ -10,7 +10,7 @@ To download the image type this code into the terminal:
 docker run --name mongodb -p 37017:27017 -d mongo
 ```
 
-Once you see the MongoDB container in Docker Desktop you can run the container. 
+Once you see the MongoDB container in Docker Desktop you click run the container. 
 
 ## Steps to start your live server  
 Inside MongoDB compass make sure your connection is mongodb://localhost:37017.
