@@ -16,7 +16,7 @@ Once you see the MongoDB container in Docker Desktop click the start button.
 Inside MongoDB compass make sure your connection is mongodb://localhost:37017.
 Then create a database and collection for your json objects. 
 
-Look inside the index.js file and  replace your DB_NAME and COLLECTION_NAME variables with your respective database and collection name.
+Look inside the index.js file and replace your DB_NAME and COLLECTION_NAME variables with your respective database and collection name.
 
 Run these commands in your terminal:
 1. npm install i
