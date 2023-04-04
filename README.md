@@ -1,6 +1,6 @@
 # jaden's how to guide
 
-This is a guide on how to connect MongoDB compass with node.
+This is a guide on how to connect MongoDB compass with with your app.
 
 ## Prequisites  
 Make sure MongoDB compass is installed and your MongoDB image is installed in Docker Desktop. 
